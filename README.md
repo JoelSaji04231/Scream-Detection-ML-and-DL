@@ -39,9 +39,11 @@ An intelligent audio classification system that detects screams in audio files u
    - L2 regularization with class balancing
 
 ### Deep Learning Models
-1. **CNN (Regular Spectrogram)** - Uses standard STFT spectrograms
-2. **CNN (Mel-Spectrogram)** - Uses mel-scaled spectrograms
-3. **CNN-LSTM** - 86.74% accuracy
+1. **CNN (Regular Spectrogram)** - 96.20% accuracy
+   - Uses standard STFT spectrograms
+3. **CNN (Mel-Spectrogram)** - 94.05% accuracy
+   - Uses mel-scaled spectrograms
+5. **CNN-LSTM** - 86.74% accuracy
    - Combines spatial (CNN) and temporal (LSTM) features
    - Uses mel-spectrograms with class weighting
 
@@ -195,17 +197,19 @@ CrimeAlert/
 
 ### Machine Learning Models (Test Set Performance)
 
-| Model | Accuracy | Precision | Recall | F1-Score |
-|-------|----------|-----------|--------|----------|
-| **SVM (ESC-50)** | **96.98%** | 97% | 97% | 97% |
-| Random Forest | 96.00% | 96% | 96% | 96% |
-| Logistic Regression | 93.86% | 94% | 94% | 94% |
+| Model | Accuracy | Precision | Recall | F1-Score | ROC-AUC |
+|-------|----------|-----------|--------|----------|---------|
+| SVM | 96.98% | 97% | 97% | 97% | 99.40% |
+| Random Forest | 96.00% | 96% | 96% | 96% | 99.05% |
+| Logistic Regression | 93.86% | 94% | 94% | 94% | 98.03% |
 
 ### Deep Learning Models
 
 | Model | Accuracy | Precision | Recall | F1-Score | ROC-AUC |
 |-------|----------|-----------|--------|----------|---------|
-| CNN-LSTM | 86.74% | 90% | 87% | 87% | 0.9714 |
+| **CNN (Spectrogram)** | 96.20% | 96% | 96% | 96% | 99.52% |
+| CNN (Mel-Spectrogram) | 94.05% | 94% | 94% | 94% | 98.43% |
+| CNN-LSTM | 86.74% | 90% | 87% | 87% | 97.14% |
 
 ### SVM Detailed Performance (Best Model)
 
