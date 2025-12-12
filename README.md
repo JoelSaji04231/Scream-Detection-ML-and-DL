@@ -2,7 +2,7 @@
 
 An intelligent audio classification system that detects screams in audio files using both traditional Machine Learning (ML) and Deep Learning (DL) approaches. The system achieves high accuracy using ensemble predictions from multiple trained models.
 
-## 📋 Table of Contents
+##  Table of Contents
 - [Features](#features)
 - [Models](#models)
 - [Dataset](#dataset)
