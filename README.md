@@ -30,7 +30,7 @@ An intelligent audio classification system that detects screams in audio files u
 ##  Models
 
 ### Machine Learning Models
-1. **Support Vector Machine (SVM)** - 96.98% accuracy ⭐ Best ML Model
+1. **Support Vector Machine (SVM)** - 96.98% accuracy *Best Model*
    - Uses RBF kernel with optimized hyperparameters
    - Class-weighted for imbalanced data
 2. **Random Forest** - 96.00% accuracy
